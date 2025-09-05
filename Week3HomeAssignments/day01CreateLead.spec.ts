@@ -1,7 +1,6 @@
 // Create a lead
 
 import {test, expect} from '@playwright/test'
-import { execPath } from 'process'
 
 test('create a lead', async({page})=>{
 
@@ -38,4 +37,5 @@ test('create a lead', async({page})=>{
     await expect(compStatus).toBe("Assigned")
     console.log("Page title is " + await page.title())
 })
+
 
